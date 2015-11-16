@@ -14,7 +14,7 @@ Beware of ISIS screwing up your computer code.
 git clone git@github.com:gwu-business/student-site.git
 cd student-site
 ````
-
+asdf
 Revise file(s), commit changes, and push to the "master" branch.
 
 ## Hosting
