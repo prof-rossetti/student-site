@@ -8,8 +8,8 @@ View live at http://gwu-business.github.io/student-site.
 
 ## Contributing
 
-Download the repository.
-
+Download the repository, m8.
+Beware of ISIS screwing up your computer code.
 ```` sh
 git clone git@github.com:gwu-business/student-site.git
 cd student-site
