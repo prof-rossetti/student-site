@@ -25,13 +25,28 @@
         <li>... of jobs and internships</li>
         <li>... with full descriptions</li>
       </ul>
-      <button type="button" name="button">Download Resume</button>
+      <button id="download-resume" type="button" name="button">Download Resume</button>
     </div>
 
     <footer>
-	    <p>&copy; 2017 Sammy Student |
+	    <p>&copy; 2021 Sammy Student |
         <a href="https://github.com/prof-rossetti/student-site">source code</a>
       </p>
 	  </footer>
+
+    <script type="text/javascript">
+
+        var resumeButton = document.getElementById("download-resume")
+
+        function handleResumeBtnClick(event) {
+            console.log("YOU CLICKED ME!")
+            //console.log(event)
+            //console.log(event.target)
+            // TODO: maybe do something
+        }
+        resumeButton.addEventListener("click", handleResumeBtnClick, false)
+        var myMessage = "Hello World"
+        console.log(myMessage)
+    </script>
   </body>
 </html>
