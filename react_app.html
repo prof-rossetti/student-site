@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script type="text/babel">
+        // adapted from: https://dev.to/luispa/lets-try-react-without-nodejs-3a7
+
+        class ShoppingList extends React.Component {
+            render() {
+                return (
+                    <div className="shopping-list">
+                        <h1>Shopping List for {this.props.name}</h1>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>WhatsApp</li>
+                            <li>Oculus</li>
+                        </ul>
+                    </div>
+                );
+            }
+        }
+
+        function App(){
+            return(
+                <div>
+                    <h1>This is a react app</h1>
+                    <ShoppingList name="Sammy Student"/>
+                    <ShoppingList name="Jane Jogger"/>
+                </div>
+            )
+        }
+
+        ReactDOM.render(<App/>, document.getElementById("root"))
+    </script>
+</body>
+</html>
