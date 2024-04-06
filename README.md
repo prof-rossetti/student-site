@@ -8,26 +8,12 @@ View live in production at https://prof-rossetti.github.io/student-site.
 
 ## Installation
 
-Fork this repo to make a copy under your own control, then clone your forked copy (for example, downloading it onto your Desktop). Locate the directory you downloaded, and open it with your file finder.
+Fork this repo, or "use this template", to make a copy of the repo under your own control. Then clone your copy, to download it onto your local computer, for example on your Desktop. Locate the directory you downloaded, and open it with your file finder / file explorer.
 
 ## Usage
 
-To view the website, you can either use the file-open approach, or run a local webserver.
+To view the website, right click on the "index.html" file and click "Open in browser", where you can view the file in the browser at its specified local filepath. Then you should be able to click the links to navigate to different pages on the site.
 
-### File Open Approach
-
-For the file open approach: right click on the "index.html" file and click "Open in browser", where you can view the file in the browser at its specified local filepath.
-
-### Local Webserver Approach
-
-For the local webserver approach: ensure you have access to Python (e.g. through the "base" Anaconda environment), navigate to the repository's root directory, and then run a local Python web server on a port like 8000:
-
-```sh
-# navigate to the repository's root directory, if necessary:
-cd ~/Desktop/student-site
-
-# run a local web server with Python 3.x (like in the Anaconda base environment):
-python -m http.server 8000
-```
+For additional guidance on hosting the website and customizing the contents, see the [Website Hosting Exercise](https://github.com/prof-rossetti/internet-technologies/blob/main/exercises/website-hosting/exercise.md).
 
 ## [License](/LICENSE)
