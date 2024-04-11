@@ -4,6 +4,16 @@
     <meta charset="utf-8">
     <title>Sammy Student | Work hard, play hard</title>
     <link rel="stylesheet" href="stylesheets/sammy-style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DC57YQEVZJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DC57YQEVZJ');
+    </script>
   </head>
   <body>
     <header>
@@ -39,14 +49,17 @@
         //
         // FYI: this is a website interactivity teaser...
         //
-        //var resumeButton = document.getElementById("download-resume")
-        //
-        //function handleClick(event) {
-        //    console.log("YOU CLICKED ME!")
-        //    console.log(event.target)
-        //}
-        //
-        //resumeButton.addEventListener("click", handleClick, false)
+        var resumeButton = document.getElementById("download-resume")
+
+        function handleClick(event) {
+            console.log("YOU CLICKED ME!")
+            console.log(event.target)
+
+            // send event to GA
+            gtag("event", "resume_download")
+        }
+
+        resumeButton.addEventListener("click", handleClick, false)
 
     </script>
   </body>
